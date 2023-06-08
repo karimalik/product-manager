@@ -5,7 +5,7 @@ import { HydratedDocument } from "mongoose";
  * user schema
  * @author karim kompissi <karimkompissi@gmail.com>
  */
-export type UserDocument = HydratedDocument<User>;
+export type UserDocument = User & Document;
 
 @Schema()
 export class User {
