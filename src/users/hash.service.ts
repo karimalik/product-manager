@@ -9,13 +9,13 @@ import * as bcrypt from 'bcrypt';
 @Injectable()
 export class HashService {
    // hash password
-    async hashPassword(password: string) {
-        const saltOrRouds = 10;
-        return await bcrypt.hash(password, saltOrRouds);
-    }
+    // async hashPassword(password: string) {
+    //     const saltOrRouds = 10;
+    //     return await bcrypt.hash(password, saltOrRouds);
+    // }
 
-    //compare password
-    async comparePassword(password: string, hash) {
-        return await bcrypt.compare(password, hash);
-    }
+    // //compare password
+    // async comparePassword(password: string, hash) {
+    //     return await bcrypt.compare(password, hash);
+    // }
 }
