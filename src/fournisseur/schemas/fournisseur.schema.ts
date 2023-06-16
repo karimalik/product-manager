@@ -1,5 +1,5 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
-import { Document } from "mongoose";
+import { Date, Document } from "mongoose";
 
 
 export type FournisseurDocument = Fournisseur & Document;
@@ -36,6 +36,11 @@ export class Fournisseur {
         type: String
     })
     codePostal: string;
+    
+    // @Prop({
+    //     type: Date
+    // })
+    // created_at: Date
 }
 
 export const FournisseurSchema = SchemaFactory.createForClass(Fournisseur);
