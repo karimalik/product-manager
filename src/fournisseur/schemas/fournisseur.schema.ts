@@ -15,7 +15,8 @@ export class Fournisseur {
 
     @Prop({
         required: false,
-        type: String
+        type: String,
+        unique: true
     })
     email: string;
 
