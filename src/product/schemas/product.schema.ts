@@ -6,7 +6,7 @@ import { Transform, Type } from 'class-transformer';
 
 export type ProductDocument = Product & Document;
 
-@Schema()
+@Schema({ timestamps: true })
 export class Product {
   @Transform(({ value }) => value.toString())
   _id: ObjectId;
