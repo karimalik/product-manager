@@ -33,7 +33,7 @@ export class FournisseurController {
   ) {
     try {
       const newFournisseur = await this.fournisseurService.create(
-        createFournisseurDto,
+        createFournisseurDto,     
       );
 
       return response.status(HttpStatus.CREATED).json({
