@@ -10,7 +10,7 @@ Clone the local repository using the following command
 $ git clone https://github.com/karimalik/product-manager.git
 ```
 
-After cloning the repository, install the necessary packets using the comman
+After cloning the repository, install the necessary packets using the commande
 
 ```bash
 $ pnpm install
