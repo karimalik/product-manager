@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Date, ObjectId } from "mongoose";
 import * as mongoose from 'mongoose';
-import { Fournisseur } from "src/fournisseur/schemas/fournisseur.schema";
+import { Fournisseur } from '../../fournisseur/schemas/fournisseur.schema';
 import { Transform, Type } from 'class-transformer';
 
 
