@@ -1,5 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { IsDate, IsNotEmpty, IsString } from "class-validator";
+import { Fournisseur } from '../../fournisseur/schemas/fournisseur.schema';
 
 export class Product {
 
@@ -9,12 +10,13 @@ export class Product {
     name: string;
 
     @ApiProperty()
-    @IsDate()
     @IsNotEmpty()
-    dateDelivrance: Date;
+    dateDelivrance: string;
 
     @ApiProperty()
-    @IsDate()
     @IsNotEmpty()
-    dateExpiration: Date;
+    dateExpiration: string;
+
+    @ApiProperty()
+    fournisseur: Fournisseur;
 }

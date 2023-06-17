@@ -6,7 +6,7 @@ import { Transform, Type } from 'class-transformer';
 
 export type ProductDocument = Product & Document;
 
-@Schema()
+@Schema({ timestamps: true })
 export class Product {
   @Transform(({ value }) => value.toString())
   _id: ObjectId;
@@ -19,15 +19,15 @@ export class Product {
 
   @Prop({
     required: true,
-    type: Date,
+    type: String,
   })
-  dateDelivrance: Date;
+  dateDelivrance: string;
 
   @Prop({
     required: true,
-    type: Date,
+    type: String,
   })
-  dateExpriration: Date;
+  dateExpriration: string;
 
   @Prop({ type: mongoose.Schema.Types.ObjectId, ref: Fournisseur.name })
   @Type(() => Fournisseur)

@@ -4,7 +4,7 @@ import { Date, Document } from "mongoose";
 
 export type FournisseurDocument = Fournisseur & Document;
 
-@Schema()
+@Schema({ timestamps: true })
 export class Fournisseur {
 
     @Prop({
