@@ -124,7 +124,7 @@ export class FournisseurController {
    * @author karim kompissi <karimkompissi@gmail.com>
    * @param response 
    * @param id 
-   * @returns deleteFournisseur
+   * @returns []
    */
   @Delete(':id')
   async remove(@Res() response, @Param('id') id: string) {

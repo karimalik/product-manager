@@ -40,7 +40,7 @@ export class ProductService {
     const products = await this.productModel.find().populate('fournisseur');
 
     if (!products || products.length == 0) {
-      throw new NotFoundException('No data in the storage');
+      throw new NotFoundException('No data in storage');
     }
 
     return products;
