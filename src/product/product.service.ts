@@ -17,7 +17,7 @@ export class ProductService {
    * @author karim kompissi <karimkompissi@gmail.com>
    * @param createProductDto
    * @param fournisseur
-   * @returns product
+   * @returns createdproduct
    */
   async create(
     createProductDto: CreateProductDto,
